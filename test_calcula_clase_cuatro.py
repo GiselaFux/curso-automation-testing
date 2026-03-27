@@ -63,7 +63,7 @@ def test_suma_parametrizada(a, b, esperado):
 
 
 @pytest.mark.smoke
-def test_suma_float(flotantes):
+def test_suma_smoke_float(flotantes):
     a, b = flotantes
     # flotantes → 0.1 + 0.2 = 0.30000000000000004, usamos approx para comparar con margen de error
     assert suma(a, b) == pytest.approx(0.3)
@@ -75,10 +75,7 @@ def test_suma_smoke(enteros_positivos):
     assert suma(a, b) == 12
 
 
-@pytest.mark.smoke
-def test_suma_smoke_float(flotantes):
-    a, b = flotantes
-    assert suma(a, b) == pytest.approx(0.3)
+
 
 
 # ---------- RESTA (parametrización) ----------
