@@ -100,7 +100,7 @@ def test_resta_parametrizada_float(flotantes):
     assert resta(a, b) == pytest.approx(-0.1)
 
 
-# ---------- MULTIPLICACIÓN (éxito + “error”/caso especial) ----------
+# ---------- MULTIPLICACIÓN (éxito + caso positivo negativo) ----------
 
 def test_multiplicacion_exito(enteros_positivos):
     a, b = enteros_positivos
