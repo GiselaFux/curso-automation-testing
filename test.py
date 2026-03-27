@@ -51,7 +51,7 @@ print()  # Línea final
 
 #calculadora con funciones SIMPLE UNIDAD 2
 
-def calculadora():
+def calculador():
     num1 = float(input("Ingresa tu primer número: "))
     num2 = float(input("Ingresa el segundo número: "))
     operacion = input("Ingresa una operacion(Elige entre + , - , * , / ):  ")
@@ -73,4 +73,4 @@ def calculadora():
     
     print(f"Resultado: {resultado}")
 
-calculadora()  # ← LLAMA función
+calculador()  # ← LLAMA función
