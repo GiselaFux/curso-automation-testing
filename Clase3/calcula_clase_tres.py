@@ -5,21 +5,7 @@ Añadir manejo de excepciones para entradas inválidas y división por cero."""
 
 
 
-  
-def suma(num1, num2):
-    return num1 + num2
-
-def resta(num1, num2):
-    return num1 - num2
-
-def multiplicacion(num1, num2):
-    return num1 * num2
-
-def division(num1, num2):
-    if num2 == 0:
-        return "Error: No se puede dividir por cero"
-    return num1 / num2
-
+from operaciones import suma, resta, multiplicacion, division
 def calculadora(operacion, num1_str, num2_str):  # Renombré para claridad
     
     num1_str = input("Ingresa tu primer número: ")
@@ -48,6 +34,7 @@ def calculadora(operacion, num1_str, num2_str):  # Renombré para claridad
         return f"Error inesperado: {e}"
     finally:
         print("Cálculo procesado")
+ 
 
 
 # ✅ Uso correcto (pasa strings)
