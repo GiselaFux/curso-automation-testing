@@ -3,9 +3,8 @@ Refactorizar el script de la calculadora lineal en al menos 4 funciones separada
 Como ser: Sumar(), Restar(), Multiplicar() y Dividir()
 Añadir manejo de excepciones para entradas inválidas y división por cero."""
 
+from clase_3.operaciones import suma, resta, multiplicacion, division
 
-
-from operaciones import suma, resta, multiplicacion, division
 def calcula(operacion, num1_str, num2_str):  # Renombré para claridad
     
     num1_str = input("Ingresa tu primer número: ")
@@ -40,6 +39,7 @@ def calcula(operacion, num1_str, num2_str):  # Renombré para claridad
 
 
 # ✅ Uso correcto (pasa strings)
-print(calcula("+", "5", "3"))      # 8.0
-print(calcula("/", "10", "0"))     # Error: No se puede dividir por cero
-print(calcula("+", "abc", "5"))    # Error: Ingresa números válidos (ej: 5, 10, 5.5)
+if __name__ == "__main__":
+    print(calcula("+", "5", "3"))      # 8.0
+    print(calcula("/", "10", "0"))     # Error: No se puede dividir por cero
+    print(calcula("+", "abc", "5"))    # Error: Ingresa números válidos (ej: 5, 10, 5.5)
